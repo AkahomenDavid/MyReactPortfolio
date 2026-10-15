@@ -15,35 +15,46 @@ function Navbar() {
 
   return (
     <header className="navbar">
-      <a className="brand" href="#home" aria-label="DeDev home">
-        <span className="brand-icon"><Code2 size={23} /></span>
-        <span>De<span className="accent">Dev</span></span>
-      </a>
+      <div className="navbar-inner">
+        <a className="brand" href="#home" aria-label="DeDev home">
+          <span className="brand-icon">
+            <Code2 size={23} />
+          </span>
+          <span>
+            De<span className="accent">Dev</span>
+          </span>
+        </a>
 
-      <nav className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
-        {links.map((link) => (
+        <nav className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </a>
+          ))}
+
           <a
-            key={link.label}
-            href={link.href}
+            className="nav-cta"
+            href="#contact"
             onClick={() => setMenuOpen(false)}
           >
-            {link.label}
+            Let's talk <span>↗</span>
           </a>
-        ))}
-        <a className="nav-cta" href="#contact" onClick={() => setMenuOpen(false)}>
-          Let's talk <span>↗</span>
-        </a>
-      </nav>
+        </nav>
 
-      <button
-        className="menu-toggle"
-        type="button"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}
-        aria-expanded={menuOpen}
-      >
-        {menuOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+        <button
+          className="menu-toggle"
+          type="button"
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}
+          aria-expanded={menuOpen}
+        >
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
     </header>
   );
 }
