@@ -35,8 +35,8 @@ const projects = [
     style: 'portfolio-preview',
     label: 'DESIGN / DEVELOP',
     symbol: '</>',
-    demo: '',
-    github: '',
+    demo: 'dedev.vercel.app',
+    github: 'https://github.com/AkahomenDavid/MyReactPortfolio',
   },
   {
     number: '04',
