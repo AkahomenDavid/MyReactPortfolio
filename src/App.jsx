@@ -22,14 +22,6 @@ function App() {
       </main>
 
       <Footer />
-      
-      <nav className="mobile-dock" aria-label="Mobile navigation">
-        <a href="#home"><House /><span>Home</span></a>
-        <a href="#projects"><BriefcaseBusiness /><span>Projects</span></a>
-        <a href="#about"><UserRound /><span>About</span></a>
-        <a href="#skills"><Wrench /><span>Skills</span></a>
-        <a href="#contact"><Mail /><span>Contact</span></a>
-      </nav>
     </div>
   );
 }

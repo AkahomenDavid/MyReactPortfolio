@@ -12,8 +12,7 @@ function Footer() {
         </a>
 
         <p>
-          Designed with care. Built with code.
-          <span className="footer-heart"> ♥ </span>
+          
         </p>
 
         <a className="back-to-top" href="#home" aria-label="Back to top">
@@ -22,8 +21,7 @@ function Footer() {
       </div>
 
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} DeDev</span>
-        <span>Keep creating. Keep growing.</span>
+        <span>&copy; {new Date().getFullYear()} DeDev</span>
       </div>
     </footer>
   );
