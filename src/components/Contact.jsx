@@ -68,7 +68,7 @@ function Contact() {
             <div className="contact-detail">
               <span className="contact-detail-icon"><X size={20} /></span>
               <div>
-                <span>LinkedIn</span>
+                <span>Twitter</span>
                 <a
                   href="https://x.com/davidakahomen/"
                   target="_blank"
