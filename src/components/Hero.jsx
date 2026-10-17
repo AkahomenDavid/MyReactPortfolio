@@ -11,7 +11,7 @@ function Hero() {
             Available for new opportunities
           </div>
 
-          <p className="eyebrow">HELLO, WORLD. I'M</p>
+          <p className="eyebrow">HELLO, WORLD. I'M DAVID AKAHOMEN.</p>
 
           <h1>
             Building digital
